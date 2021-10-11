@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap" rel="stylesheet">
+    <title> mypage</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      form input:hover{
+        cursor: pointer;
+        background-color:aliceblue;
+        color: brown;
+      }
+      
+      #form{
+        background-color:black;
+        color:white;
+        text-align: center;
+      }
+      
+      #heading{
+        color:royalblue;
+        text-align: center;
+        font-size: 35px;
+        background-color:cyan;
+        font-family: 'Arvo', serif;
+      }
+      .width{
+        width:353px;
+      }
+      .button{
+        width: 295px;
+        background-color:darkgrey;
+        color:black;
+        text-align:center;
+        margin:3px;
+      }
+      
+      
+      .button:hover{
+        color:red;
+        background-color: aqua;
+        cursor: pointer;
+        }
+      .gndr{
+        margin-left:-255px
+        
+      }
+      .gg{
+        margin-left: -100px;
+      }
+/*
+      #fees{
+        float:left;
+        margin-left: 95px;
+      }
+*/
+    </style>
+  </head>
+  <body>
+    <iframe src="https://aktu.ac.in/" width="1515" height="500"></iframe>
+    <marquee>@<strong>Notice:</strong> Submit fees till due date : 23/9/2021@</marquee>
+    <form action="form.php" method="get/post" id=form >
+      <h2 id="heading">College Form</h2><br><br>
+      
+      <label> Aktu UserName:
+      <input type="text" size="50"><br><br>
+      </label>
+      
+      <label>Aktu password:
+      <input type="password" size="50"><br><br>
+      </label>
+      
+      <label>Rollno.:
+      <input type="number" class="width"><br><br>
+      </label>
+      
+      <label>Email Id:
+      <input type="email" size="50"><br><br>
+      </label>
+      
+      <label>Address:
+      <input type="address" size="50"><br><br>
+      </label>
+      
+      <span><label>Mobile no.:
+      <input type="tel" maxlength="10">
+        </label></span>
+      <span><label>Other:
+      <input type="tel" maxlength="10">
+        </label></span><br><br>
+      
+      <label>How much Fees you submit?
+      <input type="radio" name="fee">15,000
+      <input type="radio" name="fee">25,000
+      <input type="radio" name="fee">50,000
+      <input type="radio" name="fee">full<br><br>
+      </label>
+      
+<!--
+      <div id="fees">College Fees:
+      <input type="range" max="5000" min="1000" size="50"><br><br>
+      </div>
+-->
+      
+      <div class="gndr">Gender:
+      <input name="gender" type="radio">Female
+      <input name="gender" type="radio">Male<br><br>
+      </div>
+      
+<!--
+      
+      <div class="gndr"> Fees Criteria:
+      <ul style="list-style-type:none">
+        <li><input type="checkbox">Bus fees<br></li>
+        <li><input type="checkbox">Lab fees<br></li>
+        <li><input type="checkbox">teaching fees<br></li>
+      </ul>
+      </div>
+-->
+
+
+      <div class="gg"> Fees Criteria:
+          <input type="checkbox"> Bus fees&nbsp;
+          <input type="checkbox"> Lab fees&nbsp;
+          <input type="checkbox"> teaching fees<br><br>
+      </div>
+      
+      <label>Date And Time:
+      <input type="Datetime-local" class="width"><br><br>
+      </label>
+      
+      <label>if you find any problem then write it here
+      <textarea cols="40" rows="5" placeholder="enter your query here"></textarea><br><br>
+      </label>
+      
+      <input type="submit" value="Submit" class="button">
+      <input type="reset" value="Reset" class="button">
+      
+    </form>
+    
+  </body>
+</html>
